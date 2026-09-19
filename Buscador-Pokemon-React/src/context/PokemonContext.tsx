@@ -33,7 +33,7 @@ export const PokemonProvider : React.FC<{ children : React.ReactNode}> = ({ chil
     const [mochilaActual,setMochilaActual] = useState<PokemonTarjeta[]>([]); 
 
     useEffect(()=>{
-        const data = localStorage.getItem('lista_entrenadores')Ñ
+        const data = localStorage.getItem('lista_entrenadores')
         if(data){
             const listaGuardada = JSON.parse(data) as Partial<Usuario>[];
             const lista: Usuario[] = listaGuardada.map((usuario) => ({
